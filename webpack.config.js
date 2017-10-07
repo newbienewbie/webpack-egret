@@ -16,7 +16,7 @@ module.exports = {
 		filename: 'bundle.js',
 		publicPath: 'build/'
 	},
-	devtool: 'eval-source-map',
+	devtool: 'inline-source-map',
 	devServer: {
 		historyApiFallback: true,
 		hot: true,
