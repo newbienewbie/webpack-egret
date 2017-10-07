@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path')
 var paths = require('./webpack.paths')
-var loaders = require('./webpack.loaders')
+var rules = require('./webpack.rules')
 
 
 module.exports = {
@@ -9,8 +9,7 @@ module.exports = {
 		main: paths.app
 	},
 	resolve: {
-		root: paths.app,
-		extensions: ['', '.js', '.ts']
+		extensions: ['.jsx', '.js', '.ts']
 	},
 	output: {
 		path: paths.build,
@@ -25,7 +24,7 @@ module.exports = {
 		progress: true
 	},
 	module: {
-		loaders: loaders
+		rules:rules 
 	},
 	plugins: [
 		new webpack.NoErrorsPlugin(),
