@@ -27,7 +27,7 @@ module.exports = {
 		rules:rules 
 	},
 	plugins: [
-		new webpack.NoErrorsPlugin(),
+		new webpack.NoEmitOnErrorsPlugin(),
 		new webpack.DefinePlugin({
 			BUILD_MODE: JSON.stringify('development')
 		})
